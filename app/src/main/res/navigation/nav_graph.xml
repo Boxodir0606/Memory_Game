@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/levelScreen"
+        tools:layout="@layout/screen_level"
+        android:name="com.example.memorygame.ui.screen.LevelScreen"
+        android:label="LevelScreen" >
+        <action
+            android:id="@+id/action_levelScreen_to_gameScreen"
+            app:destination="@id/gameScreen" />
+        <action
+            android:id="@+id/action_levelScreen_to_info_Screen"
+            app:destination="@id/info_Screen" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameScreen"
+        tools:layout="@layout/screen_game"
+        android:name="com.example.memorygame.ui.screen.GameScreen"
+        android:label="GameScreen" />
+    <fragment
+        tools:layout="@layout/info_fragment"
+        android:id="@+id/info_Screen"
+        android:name="com.example.memorygame.ui.screen.Info_Screen"
+        android:label="Info_Screen" />
+    <fragment
+        tools:layout="@layout/splashlayout"
+        android:id="@+id/splashScreen"
+        android:name="com.example.memorygame.ui.screen.SplashScreen"
+        android:label="SplashScreen" >
+        <action
+
+            app:launchSingleTop="true"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_splashScreen_to_levelScreen"
+            app:destination="@id/levelScreen" />
+    </fragment>
+</navigation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gamescreen">#29D9FF</color>
+    <!--    <color name="levelscreen">#4950B4</color>-->
+    <color name="levelscreen">#FF88C1</color>
+    <color name="infoscreen">#E1C9B3</color>
+    <color name="splashscreen">#F8EED9</color>
+</resources>
